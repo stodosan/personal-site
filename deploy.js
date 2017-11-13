@@ -16,6 +16,7 @@ function randomId() {
 function deployToGit(cred) {
   git().add('.')
     .commit(randomId())
+    .push('origin', 'master');
 }
 
 // const git = require('simple-git/promise');
