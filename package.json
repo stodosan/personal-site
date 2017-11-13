@@ -1,0 +1,20 @@
+{
+  "name": "sonya",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "open": "explorer \"http://localhost:8080\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "MewMewPizza",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2",
+    "font-awesome": "^4.7.0",
+    "mustache": "^2.3.0",
+    "node-sass": "^4.5.3",
+    "node-sass-middleware": "^0.11.0"
+  }
+}
