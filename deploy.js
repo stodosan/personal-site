@@ -16,7 +16,13 @@ function randomId() {
 function deployToGit(cred) {
   git().add('.')
     .commit(randomId())
-    .push('origin', 'master');
+    .push('origin', 'master', (err) => {
+      if(err) {
+        console.error('Failed to deploy:', err);
+      } else {
+        console.info('Deployed!');
+      }
+    });
 }
 
 // const git = require('simple-git/promise');
