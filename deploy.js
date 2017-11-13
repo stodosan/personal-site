@@ -10,7 +10,7 @@ fs.readFile('./credentials.json', 'utf8', function (err,data) {
 });
 
 function randomId() {
-  return "Me using deploy script: " + (new Date().toString());
+  return "Me using deploy script: " + (new Date().toLocaleString());
 }
 
 function deployToGit(cred) {
