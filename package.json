@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node server.js",
     "open": "explorer \"http://localhost:8080\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "node deploy.js"
   },
   "author": "MewMewPizza",
   "license": "ISC",
@@ -15,6 +16,7 @@
     "font-awesome": "^4.7.0",
     "mustache": "^2.3.0",
     "node-sass": "^4.5.3",
-    "node-sass-middleware": "^0.11.0"
+    "node-sass-middleware": "^0.11.0",
+    "simple-git": "^1.81.1"
   }
 }
