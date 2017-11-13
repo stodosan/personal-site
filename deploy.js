@@ -14,7 +14,7 @@ function randomId() {
 }
 
 function deployToGit(cred) {
-  git().add('.')
+  git().silent(false).add('.')
     .commit(randomId())
     .push('origin', 'master', (err) => {
       if(err) {
